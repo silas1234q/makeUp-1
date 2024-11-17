@@ -1,0 +1,51 @@
+.landpage{
+    /* border: 4px solid green; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    top:0;
+}
+.land-content{
+    width: 50%;
+    padding: 2.5em;
+    height: 100%;
+}
+.land-content h1{
+    font-size: 2.5rem;
+    color: var(--actions);
+    margin-bottom: 0.8em;
+    font-family: poppins;
+}
+.land-content p{
+    font-size: 1.1rem;
+    color: var(--text1);
+    margin-bottom: 2em;
+}
+.link{
+    background: var(--actions);
+    padding: 1em;
+    color: var(--text1);
+    text-transform: capitalize;
+    text-decoration: none;
+    border: 1px solid var(--actions);
+    transition: 0.3s;
+}
+.link:hover{
+    background: transparent;
+    color: var(--actions);
+}
+.land-image{
+    width: 50%;
+    height: 100%;
+    /* border:2px solid red; */
+}
+.land-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}

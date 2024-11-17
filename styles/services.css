@@ -1,0 +1,128 @@
+.services{
+    width: 100%;
+     height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.mobile-service-view{
+    display: none;
+}
+.services-1{
+    background: url('../assets/services.jpg')  no-repeat center center fixed;
+    width: 100%;
+    height: 60%;
+    z-index: 1;
+    overflow: hidden;
+    background-attachment:fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    display: table;
+}
+.services-cont{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: grid;
+    place-items: center;
+}
+:root {
+    --actions: #773344; /* Accent color for active elements */
+}
+
+.services-main-cont {
+    width: 50%;
+    height: 80%;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 2em;
+    padding-block: 1em;
+}
+
+.service-col-1 {
+    width: 50%;
+    height: 80%;
+}
+
+.service-col-2 {
+    width: 40%;
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display: none; Hide all slides initially */
+    opacity: 0; /* Set initial opacity to 0 */
+    visibility: hidden; /* Hide all images initially */
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s; /* Smooth opacity transition */
+ 
+}
+
+.slide.active {
+    /* display: block; */
+    opacity: 1; /* Fade in active slide */
+    visibility: visible; /* Make the active slide visible */
+    transition: opacity 0.5s ease; /* Transition without delay for active slide */
+}
+
+.service-col-1 h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--actions);
+    margin-bottom: 1em;
+}
+
+.links {
+    margin-bottom: 1.5em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.links p{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: var(--actions);
+}
+
+.slide-link {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.span-active {
+    background: var(--actions); /* Highlight active bullet */
+}
+.services-2{
+    /* border: 5px solid blue; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content:space-between;
+    padding-inline: 1em;
+    gap: 2em;
+}
+.service-info-1 h1{
+    color: var(--actions);
+    margin-bottom: 1em;
+}
+.service-info-1 p{
+    color: var(--text2);
+}
