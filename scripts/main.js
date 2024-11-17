@@ -1,4 +1,13 @@
-
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    const content = document.getElementById("content");
+  
+    // Hide the loader and show the content after 2 seconds
+    setTimeout(() => {
+      loader.style.display = "none";
+      content.style.display = "block";
+    }, 4000);
+  });
 
 
 let menuIcon = document.querySelector('.menu-icon');
@@ -15,7 +24,6 @@ menuIcon.addEventListener('click',()=>{
 
 
     }
-  
 });
 
  AOS.init();
@@ -98,17 +106,6 @@ window.addEventListener('scroll', function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const flkty = new Flickity('.carousel', {
-        cellAlign: 'center',
-        contain: true,
-        wrapAround: true,
-        draggable: true,
-        prevNextButtons: false, // Disable navigation buttons
-        pageDots: true        // Disable page dots
-
-    });
-});
 
 
 
