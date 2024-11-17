@@ -403,6 +403,9 @@
       left: 0;
      
     }
+    #loader h1{
+        color: var(--actions);
+    }
     .book-1-container{
         position: fixed;
         top: 0;
