@@ -7,12 +7,13 @@
     overflow: hidden;
     align-items: center;
     justify-content: space-between;
-    top:0;
+    top:20px;
 }
 .land-content{
     width: 50%;
     padding: 2.5em;
     height: 100%;
+    margin-top: 100px;
 }
 .land-content h1{
     font-size: 2.5rem;

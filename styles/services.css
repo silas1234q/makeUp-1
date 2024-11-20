@@ -1,6 +1,6 @@
 .services{
     width: 100%;
-     height: 100vh;
+    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -10,10 +10,13 @@
 .mobile-service-view{
     display: none;
 }
+.bg-wrap-1{
+    height: 60%;
+}
 .services-1{
     background: url('../assets/services.jpg')  no-repeat center center fixed;
     width: 100%;
-    height: 60%;
+    height: 100%;
     z-index: 1;
     overflow: hidden;
     background-attachment:fixed;
@@ -22,7 +25,6 @@
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-    display: table;
 }
 .services-cont{
     width: 100%;

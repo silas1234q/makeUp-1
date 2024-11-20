@@ -299,7 +299,7 @@
     }
     .portfolio-wrapper{
         width: 90%;
-        height: 450px;
+        height: 600px;
         position: relative;
         object-fit: cover;
         display: flex;
@@ -316,15 +316,29 @@
         z-index: -1;
         object-fit: cover;
     }
+    .portfolio-wrapper .shadow{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgba(0, 0, 0,0.2);
+        top: 0;
+    }
+
     .portfolio-wrapper img:nth-of-type(2){
-        width: 80%;
-        height: 60%;
+        width: 60%;
+        height: 50%;
         object-fit: cover;
+        z-index: 2;
+        position: absolute;
     }
     .portfolio-wrapper h1{
         color: var(--bg);
         font-size: 3rem;
         font-style: italic;
+        position: absolute;
+        top: -5px;
+        /* font-family:  Roslindale Condensed; */
     }
     .slider-wrapper{
         height: 600px;
@@ -427,4 +441,18 @@
       #appointment-form *{
         margin: 3px;
       }
+      .footer{
+        flex-direction: column-reverse;
+        background-color: var(--bg);
+        height: auto;
+      }
+      .col-1{
+        width: 100%;
+    }
+    .col-2{
+        width: 100%;
+        padding-bottom: 1em;
+        border-bottom:1px solid var(--actions);
+
+    }
 }

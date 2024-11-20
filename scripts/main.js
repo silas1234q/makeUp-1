@@ -1,43 +1,46 @@
-window.addEventListener("load", () => {
-    const loader = document.getElementById("loader");
-    const content = document.getElementById("content");
-  
-    // Hide the loader and show the content after 2 seconds
-    setTimeout(() => {
-      loader.style.display = "none";
-      content.style.display = "block";
-    }, 4000);
-  });
+
+    window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("content");
+    
+        // Hide the loader and show the content after 2 seconds
+        setTimeout(() => {
+        loader.style.display = "none";
+        content.style.display = "block";
+        }, 4000);
+    });
 
 
-let menuIcon = document.querySelector('.menu-icon');
-let navBar = document.querySelector('.nav-bar');
+    let menuIcon = document.querySelector('.menu-icon');
+    let navBar = document.querySelector('.nav-bar');
 
-menuIcon.addEventListener('click',()=>{
- 
-    if(navBar.style.maxHeight == '0px'){
-        navBar.style.maxHeight = '600px';
-        menuIcon.classList.add('open-menu');
-    }else{
-        navBar.style.maxHeight = '0px';
-        menuIcon.classList.remove('open-menu');
+    menuIcon.addEventListener('click',()=>{
+    
+        if(navBar.style.maxHeight == '0px'){
+            navBar.style.maxHeight = '600px';
+            menuIcon.classList.add('open-menu');
+        }else{
+            navBar.style.maxHeight = '0px';
+            menuIcon.classList.remove('open-menu');
 
 
-    }
-});
+        }
+    });
 
- AOS.init();
 
-const Slides = document.querySelectorAll('.slide');
-const slideLinks = document.querySelectorAll('.slide-link');
+    const SlidesOne = document.querySelectorAll('.slide');
+    const slideLinks = document.querySelectorAll('.slide-link');
 
 function showSlide(index) {
     // Loop through slides and links, toggling the active state
-    Slides.forEach((slide, i) => {
+    SlidesOne.forEach((slide, i) => {
         slide.classList.toggle('active', i === index); // Show only the selected slide
         slideLinks[i].classList.toggle('span-active', i === index); // Highlight the corresponding bullet
     });
 };
+
+
+
 
 const slider = document.querySelector('.image-slider');
 const slides = document.querySelectorAll('.slider-slide');
@@ -126,6 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
         dateInput.placeholder = 'MM/DD/YYYY'; // Set placeholder for unsupported browsers
     }
 });
+    AOS.init();
+
 // const { createProxyMiddleware } = require("http-proxy-middleware");
 // const express = require('express');
 // const nodemailer = require('nodemailer');
